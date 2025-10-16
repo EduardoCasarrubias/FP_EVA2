@@ -28,8 +28,15 @@ public class Eva2_14_captura {
     }
         //leer
         for(int i = 0; i < califas.length; i++){
-            System.out.println("[" + califas[i] + "]");
+            System.out.print("[" + califas[i] + "]");
              
     }
+        int suma = 0 ;
+        //sumar todas las calificaciones 
+        for(int i = 0; i < califas.length; i++){
+           suma += califas[i];
+        }
+        double promedio = suma / (double)tama; //dividiendo enteros 
+            System.out.println("promedio = " + promedio);
     }
 }
